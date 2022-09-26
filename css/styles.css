@@ -19,10 +19,9 @@ body{
 
 #title{
 
-overflow: hidden;
+/* overflow: hidden; */
   color: white;
   height: 100%;
-
 }
 
 .container-fluid{
@@ -36,8 +35,13 @@ overflow: hidden;
   transform: rotate(20deg);
   width: 60%;
 margin: 0 auto;
-  }
+margin-right: 20%;
 
+
+  }
+/* .image-iphone{
+  z-index: -1;
+} */
 
 /* Nava bar */
 
@@ -63,6 +67,8 @@ margin: 5% 3% 5% 0;}
 #features{
   background-color: white;
 padding: 7% 10%;
+position: relative;
+z-index: 1;
 }
 
 
@@ -126,4 +132,57 @@ padding-bottom: 5%;
 .press-image{
 width: 10%;
 margin: 0 20px;
+}
+
+#pricing{
+  padding: 100px;
+}
+
+
+@media (max-width:1028px) {
+h1{
+  text-align: center;
+
+}
+.image-1{
+  display: static;
+  transform: rotate(0deg);
+
+}
+#title{
+  height: auto;
+}
+
+}
+
+#cta{
+
+background-color:  #ff4c68;
+text-align: center;
+padding: 5% 10%;
+color: white;
+
+}
+.last{
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+
+.spacing-icon{
+  padding: 0 2%;
+  padding-bottom: 2%;
+}
+
+#footer{
+background-color: white;
+text-align: center;
+
+padding: 7% 10% 2% 10%;
+}
+
+.footar{
+  border-top: 0;
+  background-color: white;
+  padding-bottom: 5%;
 }
